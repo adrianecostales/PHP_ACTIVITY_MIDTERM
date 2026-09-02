@@ -2,13 +2,13 @@
 
 $host = "localhost";
 $username = "root";
-$password = "myfedorasqlpasswordxd";
-$dbname = "genese_db";
+$password = "";
+$dbname = "costalesdb";
 
-$connection = new mysqli($host, $username, $password, $dbname);
+$conn = new mysqli($host, $username, $password, $dbname);
 
-if ($connection->connect_error) {
-    echo "Connection Error: " . $connection->connect_error;
+if ($conn->connect_error) {
+    echo "Connection Error: " . $conn->connect_error;
 }
 
 ?>

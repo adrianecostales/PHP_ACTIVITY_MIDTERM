@@ -15,9 +15,10 @@
 
 <?php
     if(isset($_GET["info"])){
-        echo $_GET["info"];
+        echo "<h2 class='text-center text-success mt-5'>".$_GET["info"]."</h2>";
     }
 ?>
+
 
 <div class="container mt-5">
 
@@ -55,12 +56,12 @@
                         class="form-control"
                         id="student_name"
                         name="student_name"
-                        placeholder="Enter student number">
+                        placeholder="Enter student name">
                 </div>
             
                 <div class="row">
 
-                    <div class="col-md-8 mb-3">
+                    <div class="mb-3">
 
                         <label for="course" class="form-label">
                             Course

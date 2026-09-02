@@ -1,5 +1,5 @@
 <?php
-     include "adrianecostales/process.php";
+     include "database.php";
 
     if (isset($_POST['register'])) {
 
@@ -19,11 +19,11 @@
             )
     ";
     if(mysqli_query($conn, $sql)){
-        header("Location: register.php?info=Student registered successfully!");
+        header("Location: index.php?info=Student registered successfully!");
         exit();
     }
     else{
-        header("Location: register.php?info=".urlencode(mysqli_error($conn)));
+        header("Location: index.php?info=".urlencode(mysqli_error($conn)));
         exit();
     }
 

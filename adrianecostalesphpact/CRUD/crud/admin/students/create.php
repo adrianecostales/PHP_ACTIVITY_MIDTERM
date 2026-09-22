@@ -98,7 +98,7 @@
                             Full Name
                         </label>
 
-                        <input class="form-control" name="full_name"">
+                        <input class="form-control" name="full_name">
                     </div>
 
                     <!-- Username -->

@@ -111,11 +111,9 @@
 
                         <!-- Student Record -->
 
-                        <?php
-                            while($row = mysqli_fetch_assoc($result)){
-
-                            
-                        ?>
+                            <?php
+                                while($row = mysqli_fetch_assoc($result)){
+                            ?>
 
                         <tr>
                             <td>

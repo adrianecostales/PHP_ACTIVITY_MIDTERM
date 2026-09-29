@@ -59,7 +59,7 @@
     <div class="container py-4">
 
         <?php
-            if(isset($_GET["MESSAGE"])){?>
+            if(isset($_GET["message"])){?>
                 <div class="alert alert-succes"><?php echo $_GET["message"];?></div>  
         <?php }?>
 

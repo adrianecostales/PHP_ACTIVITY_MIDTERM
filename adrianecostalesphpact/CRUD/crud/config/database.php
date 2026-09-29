@@ -5,9 +5,10 @@ $user = "root";
 $pass = "";
 $db   = "francisadriane_act2a";
 
-$conn = mysqli_connect($host, $user, $pass, $db);
+$conn = mysqli_connect($host, $user, $pass, $db); 
 
 if (!$conn) {
     die("Database connection failed: " . mysqli_connect_error());
 }
-?>
+?>    
+        

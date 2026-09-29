@@ -15,9 +15,6 @@
 
 ?>
 
-
-
-
 <!doctype html>
 <html lang="en">
 
@@ -64,13 +61,9 @@
     <div class="container py-4">
 
         <?php
-            if(isset($_GET["MESSAGE"])){?>
+            if(isset($_GET["message"])){?>
                 <div class="alert alert-succes"><?php echo $_GET["message"];?></div>  
         <?php }?>
-
-
-
-
 
         <!-- Header Section -->
         <div class="d-flex justify-content-between mb-3">
@@ -143,11 +136,14 @@
                                     Edit
                                 </a>
 
-                                <button
+                                <a
                                     class="btn btn-danger btn-sm"
+                                    href="delete.php?id=<?php echo $row['id']; ?>"
+                                    onclick="return confirm ('Are you sure you want to delete this student?')"
+                                    
                                 >
                                     Delete
-                                </button>
+                                </a>
                             </td>
                         </tr>
                         <?php }?>

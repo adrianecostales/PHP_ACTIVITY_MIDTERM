@@ -11,8 +11,6 @@
     $sql = "SELECT * FROM users 
             WHERE role = 'student' ORDER BY id DESC";
     $result = mysqli_query($conn, $sql);
-
-
 ?>
 
 <!doctype html>
@@ -131,14 +129,14 @@
 
                                 <a
                                     class="btn btn-warning btn-sm"
-                                    href="student_form.html"
+                                    href="edit.php?id=<?php echo $row['id'];?>"
                                 >
                                     Edit
                                 </a>
 
                                 <a
                                     class="btn btn-danger btn-sm"
-                                    href="delete.php?id=<?php echo $row['id']; ?>"
+                                    href="delete.php?id=<?php echo $row['id'];?>"
                                     onclick="return confirm ('Are you sure you want to delete this student?')"
                                     
                                 >
